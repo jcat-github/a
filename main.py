@@ -1,6 +1,6 @@
-import requests as r
+import requests as bruh
 import json
-api = json.loads(r.get("https://randomuser.me/api").text)
+api = json.loads(bruh.get("https://randomuser.me/api").text)
 name = api['results'][0]['name']['title']+" "+api['results'][0]['name']['first']
 print(name)
 import urllib.request
